@@ -8,6 +8,28 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .page-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -89,7 +111,7 @@ a {
 }
 
 .hero .container {
-    text-align: center;
+  text-align: center;
 }
 
 .hero-title {
@@ -132,14 +154,6 @@ a {
 }
 
 
-.values-title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
 .values-item-subtitle {
   font-size: 20px;
   font-weight: 500;
@@ -164,10 +178,24 @@ a {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-item {
+  width: calc((100% - 72px) / 4);
   background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+}
+
+.team-card-content {
+  padding: 32px 0;
+  text-align: center;
 }
 
 .team-item-title {
@@ -176,6 +204,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .team-item-text {
@@ -189,6 +218,25 @@ a {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-card-content {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-item-title {
@@ -197,6 +245,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .portfolio-item-text {
@@ -206,6 +255,7 @@ a {
 
 .page-footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -216,6 +266,8 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-part {
@@ -226,30 +278,8 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .container {
   width: 1158px;
   margin: 0 auto;
